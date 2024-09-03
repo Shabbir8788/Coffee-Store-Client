@@ -17,7 +17,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `https://coffee-store-server-git-main-hasan-al-shabbirs-projects.vercel.app/coffee/${_id}`,
+          `https://coffee-store-server-delta-five.vercel.app/coffee/${_id}`,
           {
             method: "DELETE",
           }

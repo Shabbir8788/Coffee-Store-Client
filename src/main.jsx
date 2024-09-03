@@ -16,9 +16,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     loader: () =>
-      fetch(
-        "https://coffee-store-server-git-main-hasan-al-shabbirs-projects.vercel.app/coffee"
-      ),
+      fetch("https://coffee-store-server-delta-five.vercel.app/coffee"),
   },
 
   {
@@ -31,7 +29,7 @@ const router = createBrowserRouter([
     element: <UpdateCoffee />,
     loader: ({ params }) =>
       fetch(
-        `https://coffee-store-server-git-main-hasan-al-shabbirs-projects.vercel.app/coffee/${params.id}`
+        `https://coffee-store-server-delta-five.vercel.app/coffee/${params.id}`
       ),
   },
 
@@ -49,9 +47,7 @@ const router = createBrowserRouter([
     path: "/users",
     element: <Users />,
     loader: () =>
-      fetch(
-        "https://coffee-store-server-git-main-hasan-al-shabbirs-projects.vercel.app/user"
-      ),
+      fetch("https://coffee-store-server-delta-five.vercel.app/user"),
   },
 ]);
 
